@@ -51,6 +51,8 @@ namespace cbor {
         virtual void on_extra_tag(unsigned long long tag);
 
         virtual void on_extra_special(unsigned long long tag);
+        void on_float32(float value) override;
+        void on_double(double value) override;
     };
 }
 

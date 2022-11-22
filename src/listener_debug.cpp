@@ -77,3 +77,10 @@ void listener_debug::on_extra_tag(unsigned long long tag) {
 void listener_debug::on_extra_special(unsigned long long tag) {
     printf("extra special: %llu\n", tag);
 }
+
+void listener_debug::on_float32(float value) {
+  printf("float: %f\n", value);
+}
+
+void listener_debug::on_double(double value) {
+  printf("double: %f\n", value);}
